@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // JSON is used to store and transfer data between two systems
+
+    let car = {
+        model : 2018,
+        name : "Audi",
+        engine : "50hp",
+        cost : "2 lakhs"
+    }
+
+    // Now converting an Object into JSON format
+    let car1 = JSON.stringify(car);
+    console.log(car1);
+
+    // Convetting an JSON format into an Object
+    let car2 = JSON.parse(car1);
+    console.log(car2);
+</script>
+</html>
